@@ -3,7 +3,7 @@ from transformers import LlamaConfig
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv("env-file")
 
 config = LlamaConfig(
     hidden_size=int(os.getenv('HIDDEN_SIZE')),

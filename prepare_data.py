@@ -5,7 +5,7 @@ import torch
 import os
 import numpy as np
 
-load_dotenv()
+load_dotenv("env-local")
 
 # Load tokenizer from env
 model_name = os.getenv('MODEL_NAME')
